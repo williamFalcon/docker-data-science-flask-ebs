@@ -38,7 +38,7 @@ RUN chmod -R a+rx /usr/src/app/
 # ------------------------
 
 # private ngv repos
-# RUN pip2 install git+https://GITHUB_AUTH_KEY:x-oauth-basic@github.com/REPO_PATH/REPO#egg=ngv_ds
+# RUN pip2 install git+https://GITHUB_AUTH_KEY:x-oauth-basic@github.com/REPO_PATH/REPO#egg=my_lib_name
 RUN pip2 install -r requirements.txt
 
 # Indicate what port needs to be mapped by the docker daemon
