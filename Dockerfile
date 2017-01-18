@@ -48,4 +48,4 @@ EXPOSE 5000
 # RUN APP
 # ------------------------
 # Define the command to start the app
-CMD /bin/bash -c "source activate python2 && python application.py"
+CMD /bin/bash -c "source activate python2 && gunicorn --config=gunicorn.py application:application"
