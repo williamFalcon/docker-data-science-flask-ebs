@@ -10,7 +10,7 @@ def status():
     resp = Response(js, status=200, mimetype='application/json')
     return resp
 
-def start()
+def start():
     pass
 
 start()
